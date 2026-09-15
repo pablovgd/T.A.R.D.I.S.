@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Quick start for targeted peak integration of LC-MS data using TARDIS • TARDIS</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Quick start for targeted peak integration of LC-MS data using TARDIS">
 </head>
@@ -61,7 +61,7 @@
                         <h4 data-toc-skip class="author">Pablo
 Vangeenderhuysen</h4>
             
-            <h4 data-toc-skip class="date">2025-11-04</h4>
+            <h4 data-toc-skip class="date">2026-09-15</h4>
       
 
       <div class="d-none name"><code>quick_start.Rmd</code></div>
@@ -296,7 +296,7 @@ notice that peaks will have a sawtooth profile, because of the filtering
 of empty spectra within TARDIS.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"vignette_data/plots/sawtooth.png"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="vignette_data/plots/sawtooth.png" width="49%"></p>
+<p><img src="vignette_data/plots/sawtooth.png" class="r-plt" alt="" width="49%"></p>
 </div>
 <div class="section level2">
 <h2 id="screening-mode">Screening mode<a class="anchor" aria-label="anchor" href="#screening-mode"></a>
@@ -360,7 +360,7 @@ inspected:</p>
 <span>    <span class="st">"vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1578.png"</span>,</span>
 <span>    <span class="st">"vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1583.png"</span></span>
 <span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_7.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_9.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_131.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_179.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_183.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_331.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1576.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1577.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1578.png" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1583.png" width="49%"></p>
+<p><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_7.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_9.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_131.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_179.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_183.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_331.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1576.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1577.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1578.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/screening/Diagnostic_QCs_Batch_1/Component_1583.png" class="r-plt" alt="" width="49%"></p>
 <p>Based on the EICs we can see that detection and integration were
 successful, however,targets 1577 and 1583 are eluting towards the edge
 of our retention time windows, so we’ll adjust their expected retention
@@ -414,7 +414,7 @@ inspected:</p>
 <span>    <span class="st">"vignette_data/output/Diagnostic_QCs_Batch_1/Component_1578.png"</span>,</span>
 <span>    <span class="st">"vignette_data/output/Diagnostic_QCs_Batch_1/Component_1583.png"</span></span>
 <span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_7.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_9.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_131.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_179.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_183.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_331.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1576.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1577.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1578.png" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1583.png" width="49%"></p>
+<p><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_7.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_9.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_131.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_179.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_183.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_331.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1576.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1577.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1578.png" class="r-plt" alt="" width="49%"><img src="vignette_data/output/Diagnostic_QCs_Batch_1/Component_1583.png" class="r-plt" alt="" width="49%"></p>
 <p>The <code>results</code> object is a <code>list</code> that contains
 a <code>data.frame</code> with the AUC of each target in each run and a
 <code>tibble</code> that contains a feature table with the average
@@ -865,7 +865,7 @@ folder.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>
