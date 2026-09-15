@@ -3,7 +3,7 @@
 <!-- badges: end -->
 
 **NOTE**:
-I am no longer (actively maintaining TARDIS). A maintained and updated fork exist on the [LIMET Github](https://github.com/UGent-LIMET/TARDIS) 
+I am no longer (actively) maintaining TARDIS. A maintained and updated fork exist on the [LIMET Github](https://github.com/UGent-LIMET/TARDIS) 
 
 # TARDIS <img src="man/figures/tardis.png" width="150" height="150" align = right />        
 
