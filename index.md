@@ -1,6 +1,6 @@
 # TARDIS ![](reference/figures/tardis.png)
 
-**NOTE**: I am no longer (actively maintaining TARDIS). A maintained and
+**NOTE**: I am no longer (actively) maintaining TARDIS. A maintained and
 updated fork exist on the [LIMET
 Github](https://github.com/UGent-LIMET/TARDIS)
 
